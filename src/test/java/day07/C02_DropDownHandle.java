@@ -44,6 +44,7 @@ public class C02_DropDownHandle {
         //oldugunu test edin
         List<WebElement> drops = driver.findElements(By.xpath("//option"));
         System.out.println(drops.size());
+        System.out.println(drops.stream().count());// lambda ile
         for (WebElement w:drops) {
             System.out.println(w.getText());
         }

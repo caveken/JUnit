@@ -94,6 +94,7 @@ public class RegisterUser {
         if (deleteAccount.isDisplayed()){
             System.out.println("Delete Account PASSED");
         }else System.out.println("Delete Account FAILED");
+        Thread.sleep(1000);
     }
     @After
     public void tearDown(){

@@ -6,6 +6,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -43,7 +44,7 @@ public class C01_Assertions {
         driver.findElement(By.xpath("//*[@class='login']")).click();
         //      Email kutusuna @isareti olmayan bir mail yazip enter’a
         WebElement emailKutusu = driver.findElement(By.xpath("//*[@id='email_create']"));
-        emailKutusu.sendKeys("erol.evren.gmail.com");
+        emailKutusu.sendKeys("erol.evren.gmail.com", Keys.ENTER);
         //      bastigimizda “Invalid email address” uyarisi ciktigini test edelim
         Assert.assertTrue(driver.findElement(By.xpath("//*[text()='Invalid email address.']")).isDisplayed());
     }

@@ -19,7 +19,7 @@ public class C01_RadioButton {
     “Create an Account” button’una basin
     “radio buttons” elementlerini locate edin
     Secili degilse cinsiyet butonundan size uygun olani secin
-​
+
      */
     WebDriver driver;
     @Before
@@ -31,7 +31,7 @@ public class C01_RadioButton {
     }
     @After
     public void tearDown() {
-        //driver.close();
+        driver.close();
     }
 
     @Test

@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
+import java.util.List;
 
 public class C04_JunitCheckBox {
      /*
@@ -49,5 +50,10 @@ public class C04_JunitCheckBox {
         if (!cB2.isSelected()){
             cB2.click();
         }
+
+        //Aynı soruyu Liste atayıp yapmak için:
+        List<WebElement> checkBoxLarim=driver.findElements(By.xpath("//*[@type='checkbox']"));
+        //checkBoxLarim.stream().filter(t ->!t.isSelected()).forEach(WebElement::click);//Method Reference
+        checkBoxLarim.stream().filter(t ->!t.isSelected()).forEach(t->t.click()); //Lambda Expession
     }
 }
