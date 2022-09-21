@@ -30,7 +30,7 @@ public class C04_Actions extends TestBaseBeforeAfter {
         driver.switchTo().alert().accept();
         //Elemental Selenium linkine tiklayalim
         driver.findElement(By.xpath("//*[text()='Elemental Selenium']")).click();
-        //List<String > windowList=new ArrayList<>(driver.getWindowHandles());
+        //List<String > windowList=new ArrayList<>(driver.getWindowHandles());// yeni sayfa acıldıgı için yaptık ama olmadan da calisiyor
         //driver.switchTo().window(windowList.get(1));
 
         //Acilan sayfada h1 taginda “Elemental Selenium” yazdigini test edelim
