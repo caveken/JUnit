@@ -11,6 +11,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
 import java.time.Duration;
 import java.util.List;
 public class C02_DropDownHandle {
@@ -56,7 +58,9 @@ public class C02_DropDownHandle {
     public void test2(){
 //           1.Kategori menusunden Books secenegini secin
         WebElement ddm = driver.findElement(By.xpath("//*[@id='searchDropdownBox']"));
-        ddm.sendKeys("Books");
+        Select selectmenu=new Select(ddm);
+        selectmenu.selectByVisibleText("Books");
+        //ddm.sendKeys("Books");
 //           2.Arama kutusuna Java yazin vearatin
         driver.findElement(By.cssSelector("input[id='twotabsearchtextbox']")).sendKeys("Java", Keys.ENTER);
 //           3.Bulunan sonuc sayisiniyazdirin

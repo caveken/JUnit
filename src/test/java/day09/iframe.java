@@ -1,4 +1,4 @@
-package slayttakiOrnekler;
+package day09;
 
 import org.junit.Assert;
 import org.junit.Test;

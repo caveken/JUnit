@@ -1,4 +1,4 @@
-package slayttakiOrnekler;
+package day11;
 
 import org.junit.Test;
 import org.openqa.selenium.By;

@@ -67,6 +67,6 @@ public class C04_Dropdown {
         if (butunDdm.size()==4){
             System.out.println("True");
         }else System.out.println("False");
-        Assert.assertNotEquals(butunDdm.size(),4);
+        Assert.assertNotEquals(4,butunDdm.size());
     }
     }
