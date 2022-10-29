@@ -36,7 +36,7 @@ public class C03_SoftAssert extends TestBaseBeforeAfter {
         Thread.sleep(3000);
 
         //5. Sign in tusuna basin
-        //driver.findElement(By.xpath("//*[@class='btn btn-primary']")).click();
+        driver.findElement(By.xpath("//input[@name='submit']")).click();
         Thread.sleep(3000);
 
         //6. Online banking menusu icinde Pay Bills sayfasina gidin

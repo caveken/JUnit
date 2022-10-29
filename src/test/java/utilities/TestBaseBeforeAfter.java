@@ -26,6 +26,9 @@ public abstract class TestBaseBeforeAfter {
         tarih=date.format(formater);    }
     @After
     public void tearDown() {
-        //driver.close();
+        if(driver!=null){
+//            driver.close();
+//            driver.quit();
+        }
     }
 }

@@ -26,10 +26,10 @@ public class C02_Actions extends TestBaseBeforeAfter {
                 sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys("1").
                 sendKeys(Keys.TAB).sendKeys("Tem").
                 sendKeys(Keys.TAB).sendKeys("1982").
-                sendKeys(Keys.TAB).sendKeys(Keys.RIGHT).
+                sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.ARROW_DOWN).
                 sendKeys(Keys.TAB).sendKeys(Keys.TAB).
                 sendKeys(Keys.TAB).sendKeys(Keys.TAB).
-                sendKeys(Keys.TAB).sendKeys(Keys.TAB).
+                sendKeys(Keys.TAB).
                 sendKeys(Keys.ENTER).perform();
         Thread.sleep(5000);
 

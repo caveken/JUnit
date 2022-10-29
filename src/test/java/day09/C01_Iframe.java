@@ -46,7 +46,7 @@ public class C01_Iframe {
         Assert.assertTrue(iframeYazisi.isDisplayed());
         System.out.println(iframeYazisi.getText());
         //       ○ Text Box’a “Merhaba Dunya!” yazin.
-
+        //textbox ayrı bir iframe içinde olduğu için direk bulamadı html kodunu incelediğimizde iframe oldugunu gördük, gecis yapmalıyız
         WebElement textBox = driver.findElement(By.id("mce_0_ifr")); // Frame'e geçiş yapmadan önce orayı id ile locate ederiz
         driver.switchTo().frame(textBox); // Locate ettiğimiz frame geçmek için bu methodu kullanırız
         WebElement textBoxFrame = driver.findElement(By.xpath("//p"));

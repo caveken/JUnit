@@ -22,9 +22,9 @@ public class C05_Actions extends TestBaseBeforeAfter {
          */
         driver.get("https://demoqa.com/droppable");
         WebElement dragMe=driver.findElement(By.xpath("//*[@id='draggable']"));
-        WebElement dropMe=driver.findElement(By.xpath("(//*[@id='droppable'])[1]"));
+        WebElement dropHere=driver.findElement(By.xpath("(//*[@id='droppable'])[1]"));
         Actions actions=new Actions(driver);// tasıma oldugu için actions clası cagrılır istenirse parent clasa da konabilir
-        actions.dragAndDrop(dragMe,dropMe).perform();// her actions komutundan sonra perform mutlaka
+        actions.dragAndDrop(dragMe,dropHere).perform();// her actions komutundan sonra perform mutlaka
         Thread.sleep(1500);
         String actualDropped=driver.findElement(By.xpath("//*[text()='Dropped!']")).getText();
         String expectedDropped="Dropped!";
